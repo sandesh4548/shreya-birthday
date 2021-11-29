@@ -1,0 +1,196 @@
+@media screen and (max-width: 1300px) {
+  .baloon {
+    display: inline-block;
+    width: 80px;
+    height: 100px;
+    background: hsl(215, 50%, 65%);
+    border-radius: 80%;
+    position: relative;
+    box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+    /* margin-top: 150px; */
+    transition: transform 0.5s ease;
+    z-index: 10;
+    transform-origin: bottom center;
+    animation: upd 2s;
+    margin-top: 200px !important;
+    margin: 20px;
+    animation: balloons 4s ease-in-out infinite;
+  }
+  .baloon2 {
+    position: absolute;
+    margin-top: -400px !important;
+    margin-left: 890px;
+    background-color: rgb(86, 218, 251);
+  }
+  .ok {
+    margin-left: 990px;
+  }
+  .ok2 {
+    margin-left: 1100px;
+  }
+  .ok3 {
+    margin-left: 1200px;
+  }
+  .c1 {
+    background-color: rgb(116, 86, 251) !important;
+  }
+  .c2 {
+    background-color: rgb(177, 86, 251) !important;
+  }
+  .c3 {
+    background-color: rgba(251, 86, 188, 0.863) !important;
+  }
+  /* @keyframes upd {
+  10% {
+    margin-top: -310px;
+}
+  50% {
+    margin-top: -670px;
+}
+} */
+  .baloon::before {
+    content: "▲";
+    color: hsl(215, 30%, 50%);
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    /* animation: balloons 4s ease-in-out infinite; */
+    /* z-index:-100; */
+  }
+  .baloon::after {
+    display: inline-block;
+    top: 100px;
+    left: 40px;
+    position: absolute;
+    height: 250px;
+    width: 2.4px;
+    margin: 0 auto;
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    /* animation: balloons 4s ease-in-out infinite;  */
+  }
+  @keyframes balloons {
+    0%,
+    100% {
+      transform: translateY(0) rotate(-4deg);
+    }
+    50% {
+      transform: translateY(-25px) rotate(4deg);
+    }
+  }
+  .b1 {
+    background: hsl(300, 50%, 65%);
+    animation: up 4s infinite;
+  }
+  @keyframes up {
+    0%,
+    100% {
+      transform: translateY(1px) rotate(-6deg);
+    }
+    50% {
+      transform: translateY(45px) rotate(6deg);
+    }
+  }
+  .b2 {
+    background: hsl(39, 58%, 68%);
+    animation: down 4s infinite;
+  }
+  @keyframes down {
+    0%,
+    100% {
+      transform: translateY(5px) rotate(-2deg);
+    }
+    50% {
+      transform: translateY(15px) rotate(-11deg);
+    }
+  }
+  .e1 {
+       margin-left: -30px;
+  }
+  .e2 {
+       margin-left: -15px;
+  }
+
+
+
+
+
+
+
+
+
+  .gift {
+     position: absolute;
+     top: 78%;
+     left: 33%;
+     width: 100px;
+     height: 100px;
+     transform: translate3d(-50%, -50%, 0);
+   }
+   .gift2 {
+     top: 78%;
+     left: 50%;
+     width: 100px;
+     height: 100px;
+     transform: translate3d(-50%, -50%, 0);
+     position: absolute;
+   }
+   .gift3 {
+     top: 84%;
+     left: 60%;
+     width: 100px;
+     height: 100px;
+     transform: translate3d(-50%, -50%, 0);
+     position: absolute;
+   }
+   .gifttop {
+     position: relative;
+     width: 190%;
+     height: 35%;
+     background: #f54537;
+     border-radius: 5px 5px 0 0;
+     transform: translate3d(-5%, 0, 0);
+     background-image: linear-gradient(
+       to right,
+       #f54537 0%,
+       #f54537 44%,
+       #ffc113 44%,
+       #ffc113 56%,
+       #f54537 56%,
+       #f54537 100%
+     );
+   }
+   .gifttop::before,
+   .gifttop::after {
+     content: "";
+     width: 15px;
+     height: 15px;
+     border: 10px solid #ffc113;
+     border-radius: 50% 50% 0 50%;
+     position: absolute;
+     top: 0;
+     left: 50%;
+     transform: translate3d(-100%, -100%, 0) skew(10deg, 10deg);
+   }
+   .gifttop::after {
+     border-radius: 50% 50% 50% 0;
+     transform: translate3d(0, -100%, 0) skew(-10deg, -10deg);
+   }
+   .giftbox {
+     width: 170%;
+     height: 90%;
+     background-image: linear-gradient(
+       to right,
+       #d43130 0%,
+       #d43130 45%,
+       #ff900a 45%,
+       #ff900a 55%,
+       #d43130 55%,
+       #d43130 100%
+     );
+     border-radius: 0 0 5px 5px;
+   }
+}
+
